@@ -22,22 +22,22 @@ export const SkillsData: ISkillCard[] = [
 export const ContactData: ISkillCard[] = [
   {
     title: "Instagram",
-    image: "contact/instagram.svg",
+    image: "/contact/instagram.svg",
     src: "https://www.instagram.com/codehaku",
   },
   {
     title: "Github",
-    image: "contact/github.svg",
+    image: "/contact/github.svg",
     src: "https://www.github.com/nvwns1",
   },
   {
     title: "Gmail",
-    image: "contact/gmail.svg",
+    image: "/contact/gmail.svg",
     src: "mailto:nvwns12345@gmail.com",
   },
   {
     title: "LinkedIn",
-    image: "contact/linkedin.svg",
+    image: "/contact/linkedin.svg",
     src: "https://www.linkedin.com/in/suman-maharjan-b24268221/",
   },
 ];
