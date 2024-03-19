@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [""],
+    formats: ["image/webp"],
+    domains: [
+      "https://portfolio-suman.vercel.app/",
+      "https://test-suman.vercel.app/",
+    ],
     unoptimized: true,
   },
 };
