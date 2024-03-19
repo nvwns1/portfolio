@@ -3,7 +3,7 @@ import { ISkillCard } from "@/components/Card/SkillsCard/SkillCard";
 import { ProjectStatusEnum } from "../Enum/id";
 
 export const SkillsData: ISkillCard[] = [
-  { title: "React", image: "/static/skills/react.svg" },
+  { title: "React", image: "/react.svg" },
   { title: "Next.JS", image: "/next.svg" },
   { title: "Redux JS", image: "/static/skills/redux.svg" },
   { title: "JavaScript", image: "/static/skills/js.svg" },
