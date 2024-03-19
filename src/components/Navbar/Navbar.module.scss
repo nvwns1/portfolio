@@ -1,0 +1,29 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xl);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: var(--surface-primary);
+  border: 1px solid var(--border-secondary);
+
+  .ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+
+    .li {
+      padding: var(--spacing-sm) var(--spacing-md);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--green);
+        color: var(--text-primary);
+        border-radius: var(--radius-minimal);
+      }
+    }
+  }
+}

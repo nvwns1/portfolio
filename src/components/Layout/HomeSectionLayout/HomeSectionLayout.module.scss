@@ -1,0 +1,13 @@
+.sectionWrapper {
+  background-color: var(--surface-primary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-xl);
+
+  &.secondary {
+    background-color: var(--surface-secondary);
+  }
+}

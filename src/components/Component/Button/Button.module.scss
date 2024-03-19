@@ -1,0 +1,27 @@
+.buttonRoot {
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: 1px solid var(--text-accent);
+  border-radius: var(--radius-rounded);
+
+  &.sm {
+    gap: 4px;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  &.primary {
+    background-color: var(--surface-primary);
+  }
+  &.secondary {
+    background-color: var(--text-accent);
+    color: var(--text-primary);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  .btnLabel {
+    font-size: var(--font-md);
+  }
+}

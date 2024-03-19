@@ -1,0 +1,19 @@
+.root {
+  background-color: var(--surface-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-full);
+
+  .image {
+    background-color: var(--white);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-sm);
+  }
+
+  .title {
+    font-size: var(--font-md);
+  }
+}
