@@ -1,9 +1,10 @@
 import { IProjectCardProps } from "@/components/Card/ProjectCard/ProjectCard";
 import { ISkillCard } from "@/components/Card/SkillsCard/SkillCard";
 import { ProjectStatusEnum } from "../Enum/id";
+import reactIcon from "/skills/react.svg";
 
 export const SkillsData: ISkillCard[] = [
-  { title: "React", image: "/skills/react.svg" },
+  { title: "React", image: reactIcon },
   { title: "Next.JS", image: "/next.svg" },
   { title: "Redux JS", image: "/skills/redux.svg" },
   { title: "JavaScript", image: "/skills/js.svg" },
