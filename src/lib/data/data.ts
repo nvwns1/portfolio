@@ -3,41 +3,41 @@ import { ISkillCard } from "@/components/Card/SkillsCard/SkillCard";
 import { ProjectStatusEnum } from "../Enum/id";
 
 export const SkillsData: ISkillCard[] = [
-  { title: "React", image: "/skills/react.svg" },
+  { title: "React", image: "/static/skills/react.svg" },
   { title: "Next.JS", image: "/next.svg" },
-  { title: "Redux JS", image: "/skills/redux.svg" },
-  { title: "JavaScript", image: "/skills/js.svg" },
-  { title: "TypeScript", image: "/skills/typescript.svg" },
-  { title: "Socket.io", image: "/skills/socket.svg" },
-  { title: "Express JS", image: "/skills/express.svg" },
-  { title: "Github", image: "/skills/github.svg" },
-  { title: "Mongo DB", image: "/skills/mongo.svg" },
-  { title: "Node JS", image: "/skills/node.svg" },
-  { title: "Tailwind CSS", image: "/skills/tailwind.svg" },
-  { title: "CSS", image: "/skills/css.svg" },
-  { title: "Figma", image: "/skills/figma.svg" },
-  { title: "HTML", image: "/skills/html.svg" },
+  { title: "Redux JS", image: "/static/skills/redux.svg" },
+  { title: "JavaScript", image: "/static/skills/js.svg" },
+  { title: "TypeScript", image: "/static/skills/typescript.svg" },
+  { title: "Socket.io", image: "/static/skills/socket.svg" },
+  { title: "Express JS", image: "/static/skills/express.svg" },
+  { title: "Github", image: "/static/skills/github.svg" },
+  { title: "Mongo DB", image: "/static/skills/mongo.svg" },
+  { title: "Node JS", image: "/static/skills/node.svg" },
+  { title: "Tailwind CSS", image: "/static/skills/tailwind.svg" },
+  { title: "CSS", image: "/static/skills/css.svg" },
+  { title: "Figma", image: "/static/skills/figma.svg" },
+  { title: "HTML", image: "/static/skills/html.svg" },
 ];
 
 export const ContactData: ISkillCard[] = [
   {
     title: "Instagram",
-    image: "/contact/instagram.svg",
+    image: "/static/contact/instagram.svg",
     src: "https://www.instagram.com/codehaku",
   },
   {
     title: "Github",
-    image: "/contact/github.svg",
+    image: "/static/contact/github.svg",
     src: "https://www.github.com/nvwns1",
   },
   {
     title: "Gmail",
-    image: "/contact/gmail.svg",
+    image: "/static/contact/gmail.svg",
     src: "mailto:nvwns12345@gmail.com",
   },
   {
     title: "LinkedIn",
-    image: "/contact/linkedin.svg",
+    image: "/static/contact/linkedin.svg",
     src: "https://www.linkedin.com/in/suman-maharjan-b24268221/",
   },
 ];
