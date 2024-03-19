@@ -72,9 +72,8 @@ a {
 }
 
 *::-webkit-scrollbar-thumb {
-  height: 0px;
-  width: 0px;
-
+  height: 8px;
+  width: 4px;
   background-color: var(--green);
   transition: 0.4s;
   border-radius: 0.5rem;

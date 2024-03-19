@@ -4,3 +4,9 @@ export enum NavButtonIDEnum {
   PROJECTS = "Projects",
   CONTACT = "Contact",
 }
+
+export enum ProjectStatusEnum {
+  COMPLETED = "Completed",
+  IN_PROGRESS = "In Progress",
+  UPCOMING = "Upcoming",
+}
