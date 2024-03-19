@@ -45,7 +45,7 @@ export const ContactData: ISkillCard[] = [
 export const ProjectData: IProjectCardProps[] = [
   {
     title: "Online Art Gallery",
-    image: "/project/oag.png",
+    image: "/static/project/oag.png",
     description:
       "An online art gallery is a digital platform presenting diverse artwork. It offers virtual spaces for artists to showcase and sell their creations, enabling art enthusiasts to explore, purchase, and appreciate art conveniently from anywhere with curated collections.",
     technologyUsed: ["HTML", "CSS", "JS", "MySql", "Php"],
@@ -54,7 +54,7 @@ export const ProjectData: IProjectCardProps[] = [
   },
   {
     title: "Sky Insight",
-    image: "/project/skyInsight.png",
+    image: "/static/project/skyInsight.png",
     description:
       "Get instant weather updates with Sky Insight. Your essential weather companion for accurate forecasts and real-time insights. Plan your day confidently with detailed forecasts, interactive maps, and personalized alerts. Sky Insight - simplifying your weather experience, wherever you are.",
     status: ProjectStatusEnum.IN_PROGRESS,
