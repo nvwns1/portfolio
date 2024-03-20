@@ -10,14 +10,14 @@
   position: fixed;
   background-color: var(--surface-primary);
   border: 1px solid var(--border-secondary);
-
+  z-index: 12;
   .ul {
     display: flex;
     list-style: none;
     gap: var(--spacing-md);
 
     .li {
-      padding: var(--spacing-sm) var(--spacing-md);
+      padding: var(--spacing-sm) var(--spacing-sm);
       &:hover {
         cursor: pointer;
         background-color: var(--green);

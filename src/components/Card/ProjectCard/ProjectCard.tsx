@@ -33,12 +33,12 @@ const ProjectCard = ({
                 <div className={styles.head}>
                     <p className={styles.title}>{title}</p>
                     <p className={styles.description}>{description}</p>
-                    {status && <p className={styles.status}>&#8226; {status}</p>}
+                    <p className={styles.status}> {status ? status : ' '}</p>
                 </div>
                 <div className={styles.bottom}>
                     <div className={styles.bottomHead}>
                         {technologyUsed.map((tech, index) => (
-                            <span key={index} className={styles.tech}>&#8226; {tech}</span>
+                            <span key={index} className={styles.tech}>{tech}</span>
                         ))}
                     </div>
                     <div className={styles.buttonSection}>

@@ -91,3 +91,32 @@ a {
 .animated-svg:hover {
   transform: rotate(360deg);
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-sm: 0.75rem;
+    --font-md: 0.875rem;
+    --font-lg: 1rem;
+
+    --text-sm: 1.75rem;
+    --text-mg: 2rem;
+    --text-lg: 2.25rem;
+
+    --spacing-none: 0;
+    --spacing-xs: 0.125rem;
+    --spacing-sm: 0.25rem;
+    --spacing-md: 0.5rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 2rem;
+    --spacing-xl: 2.5rem;
+
+    /* Border radius */
+    --sm: 0.185rem;
+    --md: 0.25rem;
+    --lg: 0.5rem;
+    --radius-none: 0;
+    --radius-minimal: var(--sm);
+    --radius-rounded: var(--md);
+    --radius-full: var(--lg);
+  }
+}
