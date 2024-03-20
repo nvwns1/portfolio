@@ -25,14 +25,14 @@ interface IWindowSize {
 }
 const sizeData: IWindowSize = {
     [WindowScreenEnum.Desktop]: {
-        sm: 50,
+        sm: 80,
         md: 150,
         lg: 200
     },
     [WindowScreenEnum.Tablet]: {
-        sm: 40,
+        sm: 60,
         md: 100,
-        lg: 150,
+        lg: 120,
     }
 }
 
