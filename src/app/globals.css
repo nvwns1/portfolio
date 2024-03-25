@@ -5,15 +5,18 @@
 
   --green: #00ad82;
   --white: #ffffff;
+  --white-10: #dfdfdf;
   --black-100: #0f0e16;
   --black-50: #1d1d25;
 
   --surface-primary: var(--black-100);
   --surface-secondary: var(--black-50);
+  --surface-accent: var(--green);
 
   --border: var(--green);
+  --border-secondary: var(--white);
 
-  --text-primary: var(--white);
+  --text-primary: var(--white-10);
   --text-accent: var(--green);
 
   --font-sm: 0.875rem;
@@ -21,8 +24,8 @@
   --font-lg: 1.125rem;
 
   --text-sm: 2rem;
-  --text-md: 2.25rem;
-  --text-lg: 3rem;
+  --text-md: 2.5rem;
+  --text-lg: 5rem;
 
   --spacing-none: 0;
   --spacing-xxs: 0.125rem;
@@ -31,6 +34,7 @@
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 2.5rem;
+  --spacing-xxl: 4.5rem;
 
   /* Border radius */
   --sm: 0.25rem;
@@ -59,11 +63,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.heading {
-  color: var(--text-accent);
-  font-size: var(--text-sm);
 }
 
 *::-webkit-scrollbar {
@@ -119,4 +118,10 @@ a {
     --radius-rounded: var(--md);
     --radius-full: var(--lg);
   }
+}
+
+.horizontal-border {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
 }

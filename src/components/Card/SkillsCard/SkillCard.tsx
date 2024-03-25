@@ -25,14 +25,14 @@ interface IWindowSize {
 }
 const sizeData: IWindowSize = {
     [WindowScreenEnum.Desktop]: {
-        sm: 80,
-        md: 150,
-        lg: 200
+        sm: 44,
+        md: 64,
+        lg: 84
     },
     [WindowScreenEnum.Tablet]: {
-        sm: 60,
-        md: 100,
-        lg: 120,
+        sm: 24,
+        md: 44,
+        lg: 64,
     }
 }
 
@@ -46,6 +46,7 @@ const SkillCard = ({ title, image, src, size = 'md', hover = false }: ISkillCard
     }
     const { windowScreen } = useWindowWidth()
     const sizeValue = sizeData[windowScreen][size]
+    
     return (
         <div className={classNames.root} onClick={() => src && openURLInNewTab(src)}>
             <div className={styles.image}>
