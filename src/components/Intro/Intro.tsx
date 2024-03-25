@@ -1,21 +1,38 @@
 "use client"
-import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./Intro.module.scss"
 import Button from '../Component/Button/Button'
+import PopupLayout from '../Component/Button/popup/PopupLayout'
 const Intro = () => {
+    const [popup, setPopup] = useState<Boolean>(false)
     const handleResumeClick = () => {
-        console.log('first')
+        setPopup(true)
     }
     const handleHireMeClick = () => {
         console.log('first')
     }
     return (
         <section className={styles.main}>
+            {popup && <PopupLayout title='Resume'
+                closePopUp={() => setPopup(false)}
+            >
+                Hello</PopupLayout>}
+            {/* {popup && <div className={styles.popup}>
+                <div className={styles.layoutRoot}>
+                    <div className={styles.popupHead}>
+                        <p className={styles.title}>Resume</p>
+                        <p className={styles.icon} onClick={() => setPopup(false)}>X</p>
+                    </div>
+                    <div className={styles.popupBody}></div>
+                    <div className={styles.popupFooter}>
+                        <Button onClick={() => setPopup(true)}>Download</Button>
+                    </div>
+                </div>
+            </div>} */}
             <article className={styles.leftSide}>
                 <div className={styles.imageContainer}>
                     {/* <Animation /> */}
-                        {/* <Image src="/animation/animation.svg" alt="Suman Maharjan" width={300} height={300} /> */}
+                    {/* <Image src="/animation/animation.svg" alt="Suman Maharjan" width={300} height={300} /> */}
                 </div>
             </article>
             <article className={styles.rightSide}>
