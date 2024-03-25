@@ -13,7 +13,7 @@ const links = [
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <div className="logo">Suman</div>
+            <div className={styles.logo}>Suman</div>
             <ul className={styles.ul}>
                 {links.map((link, index) => {
                     return (
