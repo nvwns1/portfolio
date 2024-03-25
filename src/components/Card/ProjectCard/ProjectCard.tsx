@@ -31,9 +31,11 @@ const ProjectCard = ({
             </div>
             <div className={styles.content}>
                 <div className={styles.head}>
-                    <p className={styles.title}>{title}</p>
+                    <div className={styles.headRow}>
+                        <p className={styles.title}>{title}</p>
+                        {status && <p className={styles.status}>{status}</p>}
+                    </div>
                     <p className={styles.description}>{description}</p>
-                    <p className={styles.status}> {status ? status : ' '}</p>
                 </div>
                 <div className={styles.bottom}>
                     <div className={styles.bottomHead}>

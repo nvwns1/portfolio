@@ -11,25 +11,19 @@ const Intro = () => {
         console.log('first')
     }
     return (
-        <section className={styles.main}>
-            <article className={styles.leftSide}>
-                <div className={styles.imageContainer}>
-                    {/* <Animation /> */}
-                        {/* <Image src="/animation/animation.svg" alt="Suman Maharjan" width={300} height={300} /> */}
-                </div>
-            </article>
-            <article className={styles.rightSide}>
+        <>
+            <section className={styles.main}>
                 <div className={styles.textContent}>
-                    <p>Hello, I&apos;m,</p>
-                    <p className={styles.title}>Suman Maharjan</p>
+                    <p>Hey!</p>
+                    <p className={styles.title}>I&apos;m <span className={styles.subText}>Suman Maharjan</span></p>
                     <p>I am a React/ Next.js Developer</p>
                 </div>
                 <div className={styles.buttonSection}>
                     <Button onClick={handleResumeClick}>Resume</Button>
                     <Button background='secondary' onClick={handleHireMeClick}>Hire Me</Button>
                 </div>
-            </article>
-        </section>
+            </section>
+        </>
     )
 }
 
