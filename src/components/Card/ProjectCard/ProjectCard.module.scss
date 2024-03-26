@@ -13,9 +13,9 @@
   justify-content: center;
 
   .projectImage {
-    object-fit: fit;
-    height: 380px;
-    width: 674px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     position: relative;
     border-radius: var(--radius-full);
   }

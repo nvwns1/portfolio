@@ -21,14 +21,18 @@
     display: flex;
     list-style: none;
     gap: var(--spacing-xl);
-
-    .li {
-      padding: var(--spacing-sm) var(--spacing-sm);
-      font-size: var(--font-md);
-      &:hover {
-        cursor: pointer;
-        color: var(--green);
-      }
+  }
+  .li {
+    padding: var(--spacing-sm) var(--spacing-sm);
+    font-size: var(--font-md);
+    &:hover {
+      cursor: pointer;
+      color: var(--green);
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 80px;
   }
 }

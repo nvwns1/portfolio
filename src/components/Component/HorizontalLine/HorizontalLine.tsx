@@ -4,7 +4,7 @@ const HorizontalLine = ({ marginTop, marginBottom, id }
     : { marginTop?: number; marginBottom?: number, id?: string, }) => {
     return (
         <div
-            id={id}
+            id={id ?? 'horizontal-line' + marginTop + marginBottom}
             className="horizontal-border"
             style={{
                 marginTop: marginTop ? `${marginTop}px` : '0',

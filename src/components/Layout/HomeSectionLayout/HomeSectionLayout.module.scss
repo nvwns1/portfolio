@@ -5,10 +5,22 @@
   gap: var(--spacing-lg);
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-lg) 278px;
+  padding: var(--spacing-lg) 5%;
+
   .heading {
     color: #dfdfdf;
     font-size: var(--text-md);
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding: var(--spacing-lg) 10%;
+  }
+
+  .heading {
+    font-size: var(--text-lg);
     margin-bottom: 30px;
   }
 }
