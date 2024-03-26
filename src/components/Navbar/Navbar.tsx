@@ -13,7 +13,9 @@ const links = [
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <div className={styles.logo}>Suman</div>
+            <Link href={'#' + NavButtonIDEnum.INTRO}>
+                <div className={styles.logo}>Suman</div>
+            </Link>
             <ul className={styles.ul}>
                 {links.map((link, index) => {
                     return (
