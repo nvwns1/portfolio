@@ -62,6 +62,7 @@
     padding: var(--spacing-md) 0;
     .bottomHead {
       display: flex;
+      font-size: var(--font-md);
       gap: var(--spacing-lg);
       color: var(--text-accent);
     }
