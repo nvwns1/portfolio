@@ -34,5 +34,12 @@
 @media screen and (max-width: 768px) {
   .navbar {
     height: 80px;
+  padding: 0 var(--spacing-xl);
+
+    .ul {
+      display: flex;
+      list-style: none;
+      gap: var(--spacing-md);
+    }
   }
 }
