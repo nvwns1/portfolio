@@ -4,14 +4,18 @@ import Intro from "@/components/Intro/Intro";
 import Skills from "@/components/Skills/Skills";
 import Project from "@/components/Projects/Project";
 import Contact from "@/components/Contact/Contact";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Intro />
-      <Skills />
-      <Project />
-      <Contact />
+      <Navbar />
+      <section className={styles.content}>
+        <Intro />
+        <Skills />
+        <Project />
+        <Contact />
+      </section>
     </main>
   );
 }

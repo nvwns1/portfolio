@@ -20,7 +20,7 @@ const HomeSectionLayout = ({
 
   return (
     <>
-      <HorizontalLine id={heading} marginBottom={80} />
+      <HorizontalLine marginBottom={20} marginTop={20} id={heading} />
       <section className={classNames.sectionRoot}>
         <p className={styles.heading}>{heading}</p>
         {children}
