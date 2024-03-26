@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './HomeSectionLayout.module.scss'
 import { classnames } from '@/lib/helper/utils';
+import HorizontalLine from '@/components/Component/HorizontalLine/HorizontalLine';
 
 interface IHomeSectionLayout {
   heading: string;
@@ -18,10 +19,13 @@ const HomeSectionLayout = ({
   }
 
   return (
-    <section id={heading} className={classNames.sectionRoot}>
-      <p className="heading">{heading}</p>
-      {children}
-    </section>
+    <>
+      <HorizontalLine id={heading} marginBottom={80} />
+      <section className={classNames.sectionRoot}>
+        <p className={styles.heading}>{heading}</p>
+        {children}
+      </section>
+    </>
   )
 }
 

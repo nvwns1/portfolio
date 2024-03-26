@@ -1,46 +1,40 @@
 .main {
   height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  .leftSide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .rightSide {
-    padding: var(--spacing-xl);
-    width: 100%;
+  flex-direction: column;
+  padding: var(--spacing-xl);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xxl);
+  .textContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    color: var(--text-primary);
+    font-size: var(--text-md);
+    .title {
+      font-size: var(--text-lg);
+      display: inline;
+    }
+
+    .title .subText {
+      color: var(--text-accent);
+    }
+  }
+  .buttonSection {
+    display: flex;
     gap: var(--spacing-lg);
-    .textContent {
-      color: var(--text-primary);
-      font-size: var(--text-md);
-      .title {
-        color: var(--text-accent);
-      }
-    }
-    .buttonSection {
-      display: flex;
-      gap: var(--spacing-lg);
-    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .main {
     height: 80vh;
-    display: flex;
-    flex-direction: column;
   }
-  .leftSide {
-    flex: 40%;
-    height: 100%;
-  }
-  .rightSide {
-    flex: 60%;
+
+  .textContent {
+    text-align: center;
   }
 }

@@ -2,12 +2,25 @@
   background-color: var(--surface-primary);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-lg) 5%;
 
-  &.secondary {
-    background-color: var(--surface-secondary);
+  .heading {
+    color: #dfdfdf;
+    font-size: var(--text-md);
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding: var(--spacing-lg) 10%;
+  }
+
+  .heading {
+    font-size: var(--text-lg);
+    margin-bottom: 30px;
   }
 }

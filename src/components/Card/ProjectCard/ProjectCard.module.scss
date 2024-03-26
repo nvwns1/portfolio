@@ -1,25 +1,23 @@
 .wrapper {
   padding-top: var(--spacing-md);
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   height: 400px;
   width: 100%;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-full);
 }
 
 .image {
   flex: 50%;
-  padding: var(--spacing-lg) 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .projectImage {
-    object-fit: contain;
-    height: 90%;
-    width: 90%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     position: relative;
+    border-radius: var(--radius-full);
   }
 }
 
@@ -27,8 +25,6 @@
   flex: 50%;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-lg);
-  justify-content: space-between;
 
   .head {
     width: 100%;
@@ -37,14 +33,25 @@
     flex-direction: column;
     gap: var(--spacing-sm);
     line-height: 1.5;
+    .headRow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
     .title {
-      font-size: var(--font-lg);
+      font-size: var(--text-sm);
+      font-weight: 600;
     }
     .status {
-      color: var(--text-accent);
+      background-color: var(--surface-accent);
+      color: var(--text-primary);
+      font-size: var(--font-sm);
+      border-radius: var(--radius-full);
+      padding: 4px 16px;
     }
     .description {
       font-size: var(--font-md);
+      font-weight: 300;
       overflow: scroll;
     }
   }
@@ -56,6 +63,7 @@
     .bottomHead {
       display: flex;
       gap: var(--spacing-lg);
+      color: var(--text-accent);
     }
     .buttonSection {
       display: flex;
@@ -77,4 +85,3 @@
     padding: var(--spacing-md) var(--spacing-lg);
   }
 }
-
