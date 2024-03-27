@@ -32,6 +32,26 @@
   height: 100%;
   width: 100%;
 }
+.hireMePopUpWrapper {
+  height: 100%;
+  width: 100%;
+  padding: var(--spacing-xl);
+  .hireMeForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .main {

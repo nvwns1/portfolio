@@ -1,13 +1,15 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
 import styles from './Popup.module.scss'
+import { classnames } from '@/lib/helper/utils'
 interface IPopUp {
     title: string
+    size?: 'auto' | 'large'
     closePopUp: () => void
     children: React.ReactNode
 }
 
-const PopUp = ({ title, children, closePopUp }: IPopUp) => {
+const PopUp = ({ title, children, closePopUp, size = 'large' }: IPopUp) => {
     const popUpRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -29,9 +31,15 @@ const PopUp = ({ title, children, closePopUp }: IPopUp) => {
         };
     }, [closePopUp, popUpRef])
 
+    const classNames = {
+        popUpRoot: classnames([
+            styles.popUpRoot,
+            styles[size]
+        ])
+    }
     return (
         <div className={styles.popUpWrapper}>
-            <div ref={popUpRef} className={styles.popUpRoot}>
+            <div ref={popUpRef} className={classNames.popUpRoot}>
                 <div className={styles.popUpHead}>
                     <p className={styles.title}>{title}</p>
                     <p className={styles.icon} onClick={() => closePopUp()}>X</p>
