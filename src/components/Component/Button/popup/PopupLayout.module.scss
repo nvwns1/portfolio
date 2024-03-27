@@ -1,45 +1,4 @@
-.main {
-  height: calc(100vh - 100px);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: var(--spacing-xl);
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-xxl);
-  .textContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-md);
-    color: var(--text-primary);
-    font-size: var(--text-md);
-    .title {
-      font-size: var(--text-lg);
-      display: inline;
-    }
-
-    .title .subText {
-      color: var(--text-accent);
-    }
-  }
-  .buttonSection {
-    display: flex;
-    gap: var(--spacing-lg);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main {
-    height: 80vh;
-  }
-
-  .textContent {
-    text-align: center;
-  }
-}
-
-.popup {
+.popUpWrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,9 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .layoutRoot {
+  .popUpRoot {
     background-color: var(--surface-secondary);
-    // padding: var(--spacing-lg);
     border-radius: var(--radius-full);
     display: flex;
     flex-direction: column;
@@ -59,8 +17,7 @@
     width: 80vw;
     height: 80vh;
     position: relative;
-
-    .popupHead {
+    .popUpHead {
       width: 100%;
       height: 60px;
       background-color: var(--green);
@@ -76,7 +33,10 @@
         cursor: pointer;
       }
     }
-    .popupFooter {
+    .popUpBody {
+      padding: 0 var(--spacing-md);
+    }
+    .popUpFoot {
       position: absolute;
       bottom: var(--spacing-md);
       right: var(--spacing-md);
