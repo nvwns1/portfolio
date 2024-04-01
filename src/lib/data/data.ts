@@ -53,6 +53,15 @@ export const ProjectData: IProjectCardProps[] = [
     // viewProject: "https://github.com/nvwns1/onlineartgallery1/",
   },
   {
+    title: "Instagram Clone",
+    image: "/static/project/instagramClone.png",
+    description: "The Instagram Clone project aims to replicate the core functionalities of the popular social media platform, Instagram.",
+    status: ProjectStatusEnum.IN_PROGRESS,
+    technologyUsed: ["NextJs", "Tailwind CSS"],
+    sourceCode: "https://github.com/nvwns1/Instagram-Clone",
+    viewProject: "https://instagram-clone-suman.vercel.app/",
+  },
+  {
     title: "Sky Insight",
     image: "/static/project/skyInsight.png",
     description:
