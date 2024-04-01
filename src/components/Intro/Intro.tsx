@@ -19,7 +19,7 @@ const initialFormData: IFormdata = {
 
 const Intro = () => {
     const [popUp, setPopUp] = useState<Boolean>(false)
-    const [hireMePopUp, setHireMePopUp] = useState<Boolean>(true)
+    const [hireMePopUp, setHireMePopUp] = useState<Boolean>(false)
 
     const [formData, setFormData] = useState<IFormdata>(initialFormData)
     const [error, setErrors] = useState<Partial<IFormdata>>({})
