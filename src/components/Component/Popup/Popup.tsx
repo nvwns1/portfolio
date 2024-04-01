@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './Popup.module.scss'
 import { classnames } from '@/lib/helper/utils'
+import CloseIconSvg from '@/lib/svg/CloseIconSvg'
 interface IPopUp {
     title: string
     size?: 'auto' | 'large'
@@ -42,7 +43,7 @@ const PopUp = ({ title, children, closePopUp, size = 'large' }: IPopUp) => {
             <div ref={popUpRef} className={classNames.popUpRoot}>
                 <div className={styles.popUpHead}>
                     <p className={styles.title}>{title}</p>
-                    <p className={styles.icon} onClick={() => closePopUp()}>X</p>
+                    <CloseIconSvg className={styles.icon} onClick={() => closePopUp()} />
                 </div>
                 <div className={styles.popUpBody}>
                     {children}
