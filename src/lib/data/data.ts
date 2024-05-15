@@ -61,14 +61,14 @@ export const ProjectData: IProjectCardProps[] = [
     sourceCode: "https://github.com/nvwns1/Instagram-Clone",
     viewProject: "https://instagram-clone-suman.vercel.app/",
   },
-  {
-    title: "Sky Insight",
-    image: "/static/project/skyInsight.png",
-    description:
-      "Get instant weather updates with Sky Insight. Your essential weather companion for accurate forecasts and real-time insights. Plan your day confidently with detailed forecasts, interactive maps, and personalized alerts. Sky Insight - simplifying your weather experience, wherever you are.",
-    status: ProjectStatusEnum.IN_PROGRESS,
-    technologyUsed: ["NextJs"],
-    sourceCode: "https://github.com/nvwns1/Sky-Insight",
-    viewProject: "https://sky-insight.vercel.app",
-  },
+  // {
+  //   title: "Sky Insight",
+  //   image: "/static/project/skyInsight.png",
+  //   description:
+  //     "Get instant weather updates with Sky Insight. Your essential weather companion for accurate forecasts and real-time insights. Plan your day confidently with detailed forecasts, interactive maps, and personalized alerts. Sky Insight - simplifying your weather experience, wherever you are.",
+  //   status: ProjectStatusEnum.IN_PROGRESS,
+  //   technologyUsed: ["NextJs"],
+  //   sourceCode: "https://github.com/nvwns1/Sky-Insight",
+  //   viewProject: "https://sky-insight.vercel.app",
+  // },
 ];
