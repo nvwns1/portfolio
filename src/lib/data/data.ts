@@ -44,6 +44,36 @@ export const ContactData: ISkillCard[] = [
 
 export const ProjectData: IProjectCardProps[] = [
   {
+    title: "News Classification Project",
+    image: "/static/project/NewsClassification.png",
+    description:
+      "This project aims to classify news articles into various categories using a machine learning model.",
+    status: ProjectStatusEnum.COMPLETED,
+    technologyUsed: ["NodeJS", "MongoDB", "Daisy UI", "Flask", "Scikit-learn"],
+    sourceCode: "https://github.com/nvwns1/News-Classification",
+    // viewProject: "https://instagram-clone-suman.vercel.app/",
+  },
+  {
+    title: "Incognito Message",
+    image: "/static/project/incognitoMsg.png",
+    description: "Anonymously message anyone",
+    status: ProjectStatusEnum.COMPLETED,
+    technologyUsed: ["NextJs", "MongoDB"],
+    sourceCode: "https://github.com/nvwns1/incognito-msg",
+    viewProject: "https://incognito-msg-alpha.vercel.app/",
+  },
+  {
+    title: "Instagram Clone",
+    image: "/static/project/instagramClone.png",
+    description:
+      "The Instagram Clone project aims to replicate the core functionalities of the popular social media platform, Instagram.",
+    status: ProjectStatusEnum.IN_PROGRESS,
+    technologyUsed: ["NextJs", "Tailwind CSS"],
+    sourceCode: "https://github.com/nvwns1/Instagram-Clone",
+    viewProject: "https://instagram-clone-suman.vercel.app/",
+  },
+
+  {
     title: "Online Art Gallery",
     image: "/static/project/oag.png",
     description:
@@ -52,23 +82,4 @@ export const ProjectData: IProjectCardProps[] = [
     sourceCode: "https://github.com/nvwns1/onlineartgallery1/",
     // viewProject: "https://github.com/nvwns1/onlineartgallery1/",
   },
-  {
-    title: "Instagram Clone",
-    image: "/static/project/instagramClone.png",
-    description: "The Instagram Clone project aims to replicate the core functionalities of the popular social media platform, Instagram.",
-    status: ProjectStatusEnum.IN_PROGRESS,
-    technologyUsed: ["NextJs", "Tailwind CSS"],
-    sourceCode: "https://github.com/nvwns1/Instagram-Clone",
-    viewProject: "https://instagram-clone-suman.vercel.app/",
-  },
-  // {
-  //   title: "Sky Insight",
-  //   image: "/static/project/skyInsight.png",
-  //   description:
-  //     "Get instant weather updates with Sky Insight. Your essential weather companion for accurate forecasts and real-time insights. Plan your day confidently with detailed forecasts, interactive maps, and personalized alerts. Sky Insight - simplifying your weather experience, wherever you are.",
-  //   status: ProjectStatusEnum.IN_PROGRESS,
-  //   technologyUsed: ["NextJs"],
-  //   sourceCode: "https://github.com/nvwns1/Sky-Insight",
-  //   viewProject: "https://sky-insight.vercel.app",
-  // },
 ];
